@@ -129,7 +129,7 @@
       ]
     },
     {
-      "tag": "portfolio_predict",
+      "tag": "stock_prediction",
       "patterns": [
         "I want to know the price of a stock in the future!",
         "Show me the future price of a stock",
