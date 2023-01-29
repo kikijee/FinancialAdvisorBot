@@ -131,10 +131,10 @@ mappings = {
 
 assistant = GenericAssistant('intents.json', mappings, "financial_assistant_model")
 
-assistant.load_model()
+#assistant.load_model()
 
-# assistant.train_model()
-# assistant.save_model()
+assistant.train_model()
+assistant.save_model()
 
 while True:
   message = input("")
