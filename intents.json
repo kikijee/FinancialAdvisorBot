@@ -129,6 +129,30 @@
       ]
     },
     {
+      "tag": "portfolio_predict",
+      "patterns": [
+        "I want to know the price of a stock in the future!",
+        "Show me the future price of a stock",
+        "I want to know about a stock will be",
+        "Show me the price of a stock from the future",
+        "Show me the future price of a company",
+        "I want to know the future price for a ticker",
+        "get future price",
+        "get the future price for a stock",
+        "What are your predictions?",
+        "Can you predict a stock?",
+        "Could you predict a stock?",
+        "predict a stock",
+        "Please predict a stock",
+        "What is your prediction?",
+        "Any predictions?",
+        "Do you have any predictions?"
+      ],
+      "responses": [
+        "Predict"
+      ]
+    },
+    {
       "tag": "bye",
       "patterns": [
         "bye",

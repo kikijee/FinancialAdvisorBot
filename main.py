@@ -111,6 +111,7 @@ mappings = {
   'remove_portfolio': remove_portfolio,
   'show_portfolio': show_portfolio,
   'portfolio_gains': portfolio_gains,
+  'portfolio_predict': portfolio_predict,
   'bye': bye
 }
 
