@@ -12,11 +12,11 @@ import datetime as dt
 yf.pdr_override()
 
 # initialized portfolio
-# portfolio = {'AAPL': 20, 'TSLA': 5, 'GS': 10}
+portfolio = {'AAPL': 20, 'TSLA': 5, 'GS': 10}
 
 # write portfolio to file
-# with open('portfolio.pkl', 'wb') as f:
-#   pickle.dump(portfolio, f)
+with open('portfolio.pkl', 'wb') as f:
+  pickle.dump(portfolio, f)
 
 # load portfolio
 with open('portfolio.pkl', 'rb') as f:
@@ -116,10 +116,10 @@ mappings = {
 
 assistant = GenericAssistant('intents.json', mappings, "financial_assistant_model")
 
-assistant.load_model()
+# assistant.load_model()
 
-# assistant.train_model()
-# assistant.save_model()
+assistant.train_model()
+assistant.save_model()
 
 while True:
   message = input("")
