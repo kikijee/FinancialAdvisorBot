@@ -1,8 +1,8 @@
-#import StockPredictionModel
-#import ChatBotModel
+import StockPredictionModel
+import ChatBotModel
 import GUI
 import tkinter
-#from neuralintents import GenericAssistant
+from neuralintents import GenericAssistant
 
 
 if __name__ == '__main__':
