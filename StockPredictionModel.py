@@ -16,8 +16,10 @@ def portfolio_predict(company):
     #Load Data
     #company = 'META'
 
-    start = dt.datetime(2012, 1, 1)
-    end = dt.datetime(2020, 1, 1)
+    start = dt.datetime(2015, 1, 1)
+    #end = dt.datetime(2020, 1, 1)
+    end = dt.datetime.now()
+    
 
     data = web.DataReader(company, start, end)
 

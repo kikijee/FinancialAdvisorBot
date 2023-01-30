@@ -37,10 +37,10 @@
         "Add a stock to my list",
         "I want to add something to my portfolio",
         "I want to add a new stock",
-        "I have a new stock",
+        "I want to buy a new stock",
         "I want to add seomthing to my portfolio",
-        "I bought a new stock",
-        "I bought a stock"
+        "buy a new stock",
+        "looking to buy"
       ],
       "responses": [
         "Adding Stock"
@@ -55,10 +55,11 @@
         "I want to remove something from my portfolio",
         "I want to remove a stock",
         "I want to remove from my portoflio",
-        "I sold an old stock",
+        "I want to sell an old stock",
         "I want to remove something from my portfolio",
-        "I sold a stock", 
-        "I am selling a stock"
+        "I want to sell stock", 
+        "I am selling a stock",
+        "I want to sell"
       ],
       "responses": [
         "Removing Stock"
@@ -96,7 +97,7 @@
         "get the price for a stock"
       ],
       "responses": [
-        "Showinr Stock Price"
+        "Showing Stock Price"
       ]
     },
     {
@@ -150,6 +151,31 @@
       ],
       "responses": [
         "Predict"
+      ]
+    },
+    {
+      "tag": "introduction",
+      "patterns":[
+        "Who are you",
+        "What are you",
+        "What is your name"
+      ],
+      "responses": [
+        "I am your personal Financial Assistant Bot\nhere to help you with all you financial needs!"
+      ]
+    },
+    {
+      "tag": "functionality",
+      "patterns": [
+        "What can you do",
+        "What is your functionality",
+        "how can you help me",
+        "help me",
+        "show me your options",
+        "what are your options"
+      ],
+      "responses" : [ 
+        "Here is a list of all the things that I can do for you:\n\n-\tAdd a stock\n\n-\tRemove a stock\n\n-\tShow your investments\n\n-\tShow graphs of any stock\n\n-\tPredict a stock for the next closing day"
       ]
     },
     {

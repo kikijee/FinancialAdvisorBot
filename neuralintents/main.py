@@ -193,5 +193,7 @@ class GenericAssistant(IAssistant):
 
         if ints[0]['intent'] in self.intent_methods.keys():
             self.intent_methods[ints[0]['intent']]()
+            return ints[0]['intent']
         else:
+            print("what")
             return self._get_response(ints, self.intents)
