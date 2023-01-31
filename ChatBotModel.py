@@ -42,6 +42,7 @@ class ChatBot():
       'stock_price': self.stock_price,
       'stock_prediction': self.stock_prediction,
       'portfolio_gains': self.portfolio_gains,
+      'portfolio_worth': self.portfolio_worth,
       'introduction':self.introduction,
       'functionality':self.functionality,
       'bye': self.bye
@@ -198,7 +199,6 @@ class ChatBot():
 
   def bye(self):
     print("Goodbye!")
-    time.sleep(2)
     sys.exit(0)
 
   def ask(self,message):

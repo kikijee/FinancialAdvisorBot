@@ -101,7 +101,7 @@
       ]
     },
     {
-      "tag": "protfolio_worth",
+      "tag": "portfolio_worth",
       "patterns": [
         "How much is my portfolio worth?",
         "What is the value of my portfolio?",
@@ -109,7 +109,9 @@
         "How much monye is in my portfolio",
         "How much are my investments worth?",
         "What is the value of my investments?",
-        "portfolio value"
+        "portfolio value",
+        "How much are my investments worth?",
+        "How much money do I have"
       ],
       "responses": [
         "Portfolio Worth"
@@ -123,7 +125,8 @@
         "Am I in the positive?",
         "Are my investments positive?",
         "Did I make any gains?",
-        "I want to know about the portfolio performance"
+        "I want to know about the portfolio performance",
+        "How are my gains?"
       ],
       "responses": [
         "Portfolio Gains"

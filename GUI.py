@@ -27,7 +27,7 @@ class GUI(customtkinter.CTk):
         self.my_textframe = customtkinter.CTkFrame(self, corner_radius= 20)
         self.my_textframe.pack(pady=10)
 
-        self.my_text = Text(self.my_textframe, height=20,width=67,wrap=WORD,bd=0,bg="#292929",fg="silver",font=('comicsansms',12))
+        self.my_text = Text(self.my_textframe, height=20,width=67,wrap=WORD,bd=0,bg="#292929",fg="silver",font=('comicsansms',18))
 
         self.my_text.pack(pady=15,padx=15)
     
