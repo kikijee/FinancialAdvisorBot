@@ -30,7 +30,7 @@ def portfolio_predict(company):
     scaled_data=scaler.fit_transform(data['Close'].values.reshape(-1,1))
 
     try:
-        model = pickle.load(open(f"{company}_model.pkl", 'rb'))
+        model = pickle.load(open(f"StockPredictionModels/{company}_model.pkl", 'rb'))
     except:    
 
         x_train=[]
@@ -57,7 +57,7 @@ def portfolio_predict(company):
         model.compile(optimizer='adam', loss='mean_squared_error')
         model.fit(x_train, y_train, epochs=25, batch_size=32)
 
-        pickle.dump(model, open(f"{company}_model.pkl", 'wb'))
+        pickle.dump(model, open(f"StockPredictionModels/{company}_model.pkl", 'wb'))
 
     '''Test the model accuracy on existing data'''
 

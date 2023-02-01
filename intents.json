@@ -178,7 +178,7 @@
         "what are your options"
       ],
       "responses" : [ 
-        "Here is a list of all the things that I can do for you:\n\n-\tAdd a stock\n\n-\tRemove a stock\n\n-\tShow your investments\n\n-\tShow graphs of any stock\n\n-\tPredict a stock for the next closing day"
+        "Here is a list of all the things that I can do for you:\n\n-\tAdd/Buy a stock\n\n-\tRemove/Sell a stock\n\n-\tDisplay and keep track of your investments\n\n-\tCalculate your gains\n\n-\tPlot graphs of any stock\n\n-\tPredict a stock for the next closing day"
       ]
     },
     {

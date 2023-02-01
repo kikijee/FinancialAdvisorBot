@@ -123,23 +123,23 @@ class GenericAssistant(IAssistant):
 
     def save_model(self, model_name=None):
         if model_name is None:
-            self.model.save(f"{self.model_name}.h5", self.hist)
-            pickle.dump(self.words, open(f'{self.model_name}_words.pkl', 'wb'))
-            pickle.dump(self.classes, open(f'{self.model_name}_classes.pkl', 'wb'))
+            self.model.save(f"ChatBotModels/{self.model_name}.h5", self.hist)
+            pickle.dump(self.words, open(f'ChatBotModels/{self.model_name}_words.pkl', 'wb'))
+            pickle.dump(self.classes, open(f'ChatBotModels/{self.model_name}_classes.pkl', 'wb'))
         else:
-            self.model.save(f"{model_name}.h5", self.hist)
-            pickle.dump(self.words, open(f'{model_name}_words.pkl', 'wb'))
-            pickle.dump(self.classes, open(f'{model_name}_classes.pkl', 'wb'))
+            self.model.save(f"ChatBotModels/{model_name}.h5", self.hist)
+            pickle.dump(self.words, open(f'ChatBotModels/{model_name}_words.pkl', 'wb'))
+            pickle.dump(self.classes, open(f'ChatBotModels/{model_name}_classes.pkl', 'wb'))
 
     def load_model(self, model_name=None):
         if model_name is None:
-            self.words = pickle.load(open(f'{self.model_name}_words.pkl', 'rb'))
-            self.classes = pickle.load(open(f'{self.model_name}_classes.pkl', 'rb'))
-            self.model = load_model(f'{self.model_name}.h5')
+            self.words = pickle.load(open(f'ChatBotModels/{self.model_name}_words.pkl', 'rb'))
+            self.classes = pickle.load(open(f'ChatBotModels/{self.model_name}_classes.pkl', 'rb'))
+            self.model = load_model(f'ChatBotModels/{self.model_name}.h5')
         else:
-            self.words = pickle.load(open(f'{model_name}_words.pkl', 'rb'))
-            self.classes = pickle.load(open(f'{model_name}_classes.pkl', 'rb'))
-            self.model = load_model(f'{model_name}.h5')
+            self.words = pickle.load(open(f'ChatBotModels/{model_name}_words.pkl', 'rb'))
+            self.classes = pickle.load(open(f'ChatBotModels/{model_name}_classes.pkl', 'rb'))
+            self.model = load_model(f'ChatBotModels/{model_name}.h5')
 
     def _clean_up_sentence(self, sentence):
         sentence_words = nltk.word_tokenize(sentence)
